@@ -244,6 +244,7 @@
 font-family: Inter;
 font-size: 14px;
 font-weight: 400;
+margin: 6px 0 6px 0;
 }
 /* 2nd page start hear  */
 
@@ -253,6 +254,7 @@ font-weight: 400;
   max-width: 80%;
   height: 300px;
   margin: 0 auto;
+  margin-bottom: 50px;
   border-radius: 18px;
   display: flex;
   align-items: center;
@@ -265,9 +267,23 @@ font-weight: 400;
   /* border: 2px solid white; */
   color: aliceblue;
 }
+.btn-3{
+  padding: 7px 20px 7px 20px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  border: none;
+  color: white;
+}
 .third-img {
+  background: url(../images/run.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 18px;
   width: 50%;
   height: 100%;
+  /* border: 2px solid white; */
 }
 .third-img img {
   width: 100%;
@@ -278,7 +294,7 @@ font-weight: 400;
 .third-title h4 {
   color: rgb(255, 255, 255);
   font-family: Inter;
-  font-size: 48px;
+  font-size: 2.7rem;
   font-weight: 900;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -306,10 +322,12 @@ font-weight: 400;
   .items {
     display: none;
   }
-  .hero-content {
+  .hero-content,
+  .third-container {
     flex-direction: column;
   }
-  .hero-title {
+  .hero-title,
+  .second-title {
     width: 100%;
   }
   .btn-2 {
@@ -344,6 +362,28 @@ font-weight: 400;
   .play {
     display: block;
   }
+  .second-content {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .third-container{
+    height: 100%;
+    gap: 50px;
+  }
+  .third-img{
+    width: 340px;
+    height: 200px;
+   
+  }
+ 
+  .third-btn{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-3{
+    width: 80%;
+  }
 }
 /* responsive for tablet  */
 
@@ -351,14 +391,32 @@ font-weight: 400;
   .hero-content {
     flex-direction: column;
   }
-
+ 
   .hero-title {
     width: 100%;
-    border: 2px solid red;
+    
   }
   .hero-img {
-    /* width: 100%; */
-    border: 2px solid white;
+    width: 100%;
+    
   }
+  /* for second page  */
+  .second-content {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .second-title, 
+  .third-img {
+    width: 100%;
+  }
+  .cart-1 h4{
+    margin-top:20px ;
+  }
+  .third-container{
+    padding: 46px 40px  40px 46px;
+  }
+  
+
+  /* for second page  */
+  
 }
 /* responsive for tablet  */
